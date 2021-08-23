@@ -13,7 +13,7 @@
     <div class="container">
         <div class="wrapper">
     <h1>Add Book</h1>
-    <form>
+    <form type="submit" id="formid">
         <div class="input">
         <label for="Bname">Book Title</label>
         <input type="text" id="Bname" name="Bname">
@@ -27,34 +27,31 @@
         <input type="number" id="isbn" name="ISBN">
         </div>
        
-        <input id="btn"type="submit" value="Submit">
+        <button id="btn" value="Submit"> submit </button>
       </form>
-      <main>
-         <div class="title">
-          <h1>Title</h1>
-          <h1>Author</h1>
-          <h1>ISBN</h1>
-        
+     <table>
+         <thead>
+             <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+             </tr>
 
-         </div>
-         <div class="title-details">
-             <div class="align">
-            <div class="book">
-                <p>Book</p>
-              </div>
-            <div class="book">
-              <p>John/Doe</p>
-            </div>
-            <div class="book">
-                <p>4768</p>
-              </div>
-             
-            </div>
-            <i class="fas fa-times"></i>
-           </div>
-           
-      </main>
+         </thead>
+         <tbody id="book-list"></tbody>
+
+
+
+
+
+
+     </table>
+
+
+
     </div>
 </div>
+<script src="./app.js"></script>
     </body>
 </html>
